@@ -10,19 +10,40 @@ import SwiftUI
 struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizersListViewModel()
+    @State private var isShowingDetailView = false
+    @State private var selectedAppetizer : Appetizer?
+
     
     var body: some View {
         ZStack{
             NavigationView{
-                
                 List(viewModel.appetizers){appetizer in
                     AppetizerListCell(appetizer: appetizer)
+                        .onTapGesture {
+                            selectedAppetizer = appetizer
+                            isShowingDetailView = true
+                        }
+                    
                 }
+                // disable appied to view will make it unintractable
+                .disabled(isShowingDetailView)
                 .navigationTitle("Appetizers 🍝")
                 .navigationBarTitleDisplayMode(.large)
             }.onAppear(){
                 viewModel.getAppetizers()
             }
+            // make appetizerListView blur when isShowingDetailView is TRUE
+            .blur(radius: isShowingDetailView ? 20 : 0)
+            
+            
+            
+            
+            // on tap resent detail view
+            if isShowingDetailView{
+                AppetizerDetails(isShowingDetailView: $isShowingDetailView,
+                                 appetizer: selectedAppetizer!)
+            }
+            
             // presenting loading view
             if viewModel.isLoading{
                 LoadingView()
@@ -38,30 +59,10 @@ struct AppetizerListView: View {
     
 }
 
-#Preview {
-    AppetizerListView()
-}
+//#Preview {
+//    AppetizerListView( selectedAppetizer: MockData.sampleAppetizer)
+//}
 
 
 
-struct AppetizerListCell: View {
-    
-    let appetizer: Appetizer
-    
-    var body: some View {
-        HStack{
-            AppetizerReoteImage(urlString: appetizer.imageURL)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 120, height: 90)
-                .cornerRadius(10)
-            
-            VStack (alignment: .leading, spacing: 5){
-                Text(appetizer.name)
-                    .font(.title2)
-                    .fontWeight(.medium)
-                Text("$\(appetizer.price, specifier: "%.2f")")
-                    .foregroundColor(.secondary)
-            }
-        }
-    }
-}
+

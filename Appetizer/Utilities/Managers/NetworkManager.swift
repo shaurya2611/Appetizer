@@ -15,7 +15,7 @@ final class NetworkManager{
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     private let appetizerURL =  baseURL + "appetizers"
     
-    // Implementing Cache, to prevent network call for images every time view load
+    // Implementing Cache, to prevent network call from downloading images every time view load
     private let cache = NSCache<NSString, UIImage>() // its abscially a key-value pair
     
     private init(){

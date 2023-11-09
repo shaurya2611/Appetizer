@@ -37,7 +37,7 @@ struct MockData{
                                         carbs: 0,
                                         id: 1,
                                         name: "Asian Flank Steak",
-                                        price: 8,
+                                           price: 8.8989,
                                         description: "This perfectly thin cut just melts in your mouth.",
                                         calories: 300)
     
