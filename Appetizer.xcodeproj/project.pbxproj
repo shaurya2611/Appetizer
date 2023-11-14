@@ -15,6 +15,8 @@
 		7B8F005E2AFBC7BF00496112 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F005D2AFBC7BF00496112 /* Color+Ext.swift */; };
 		7B8F00602AFBC90E00496112 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F005F2AFBC90E00496112 /* LoadingView.swift */; };
 		7B9409B62AFD216600353693 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9409B52AFD216600353693 /* AppetizerListCell.swift */; };
+		7B9409B92AFD2CCF00353693 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9409B82AFD2CCF00353693 /* APButton.swift */; };
+		7B9409BB2AFD30EF00353693 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9409BA2AFD30EF00353693 /* XDismissButton.swift */; };
 		7B9F6AF52AEE85140044B998 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6AF42AEE85140044B998 /* AppetizerApp.swift */; };
 		7B9F6AF72AEE85140044B998 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6AF62AEE85140044B998 /* AppetizerTabView.swift */; };
 		7B9F6AF92AEE85180044B998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9F6AF82AEE85180044B998 /* Assets.xcassets */; };
@@ -24,6 +26,10 @@
 		7B9F6B072AEE88EB0044B998 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6B062AEE88EA0044B998 /* AccountView.swift */; };
 		7B9F6B0B2AF01DFB0044B998 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6B0A2AF01DFB0044B998 /* Appetizer.swift */; };
 		7B9F6B0D2AF171250044B998 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6B0C2AF171250044B998 /* NetworkManager.swift */; };
+		7BADFB912B00AB31001185BD /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADFB902B00AB31001185BD /* String+Ext.swift */; };
+		7BADFB932B00B6B0001185BD /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADFB922B00B6B0001185BD /* OrderViewModel.swift */; };
+		7BADFB962B03555C001185BD /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADFB952B03555C001185BD /* EmptyState.swift */; };
+		7BCED1802AFF9B4D00A2E15B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCED17F2AFF9B4D00A2E15B /* AccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,8 @@
 		7B8F005D2AFBC7BF00496112 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		7B8F005F2AFBC90E00496112 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7B9409B52AFD216600353693 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		7B9409B82AFD2CCF00353693 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		7B9409BA2AFD30EF00353693 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		7B9F6AF12AEE85140044B998 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9F6AF42AEE85140044B998 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		7B9F6AF62AEE85140044B998 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,10 @@
 		7B9F6B062AEE88EA0044B998 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		7B9F6B0A2AF01DFB0044B998 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		7B9F6B0C2AF171250044B998 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7BADFB902B00AB31001185BD /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		7BADFB922B00B6B0001185BD /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		7BADFB952B03555C001185BD /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		7BCED17F2AFF9B4D00A2E15B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,8 @@
 		7B6F3EAD2AFCADF500193E79 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7BADFB942B035541001185BD /* Empty States */,
+				7B9409B72AFD2C9C00353693 /* Buttons */,
 				7B6F3EAF2AFCAE1400193E79 /* Image */,
 				7B6F3EB02AFCAE1E00193E79 /* Cells */,
 				7B6F3EAE2AFCADFF00193E79 /* UIKit Components */,
@@ -113,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7B8F005D2AFBC7BF00496112 /* Color+Ext.swift */,
+				7BADFB902B00AB31001185BD /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +135,7 @@
 		7B7A7C422AFBF9EF000C2364 /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				7BCED17F2AFF9B4D00A2E15B /* AccountViewModel.swift */,
 				7B9F6B062AEE88EA0044B998 /* AccountView.swift */,
 			);
 			path = AccountView;
@@ -138,6 +154,7 @@
 		7B7A7C442AFBFA16000C2364 /* OrderView */ = {
 			isa = PBXGroup;
 			children = (
+				7BADFB922B00B6B0001185BD /* OrderViewModel.swift */,
 				7B9F6B022AEE88CF0044B998 /* OrderView.swift */,
 			);
 			path = OrderView;
@@ -151,6 +168,15 @@
 				7B6F3EB32AFCAEA600193E79 /* Extensions */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7B9409B72AFD2C9C00353693 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7B9409B82AFD2CCF00353693 /* APButton.swift */,
+				7B9409BA2AFD30EF00353693 /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		7B9F6AE82AEE85140044B998 = {
@@ -208,6 +234,14 @@
 				7B9F6B0A2AF01DFB0044B998 /* Appetizer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7BADFB942B035541001185BD /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				7BADFB952B03555C001185BD /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,14 +316,20 @@
 			files = (
 				7B9F6B0B2AF01DFB0044B998 /* Appetizer.swift in Sources */,
 				7B9F6B032AEE88CF0044B998 /* OrderView.swift in Sources */,
+				7B9409BB2AFD30EF00353693 /* XDismissButton.swift in Sources */,
 				7B9F6B052AEE88DF0044B998 /* AppetizerListView.swift in Sources */,
+				7BCED1802AFF9B4D00A2E15B /* AccountViewModel.swift in Sources */,
 				7B6F3EB52AFCB4F100193E79 /* AppetizerDetails.swift in Sources */,
 				7B8F00582AFB997100496112 /* APError.swift in Sources */,
+				7BADFB932B00B6B0001185BD /* OrderViewModel.swift in Sources */,
 				7B8F005A2AFBB22700496112 /* AppetizersListViewModel.swift in Sources */,
+				7B9409B92AFD2CCF00353693 /* APButton.swift in Sources */,
 				7B8F00602AFBC90E00496112 /* LoadingView.swift in Sources */,
 				7B7A7C402AFBEBFC000C2364 /* RemoteImage.swift in Sources */,
 				7B9F6B0D2AF171250044B998 /* NetworkManager.swift in Sources */,
 				7B9F6AF72AEE85140044B998 /* AppetizerTabView.swift in Sources */,
+				7BADFB912B00AB31001185BD /* String+Ext.swift in Sources */,
+				7BADFB962B03555C001185BD /* EmptyState.swift in Sources */,
 				7B8F005E2AFBC7BF00496112 /* Color+Ext.swift in Sources */,
 				7B9F6AF52AEE85140044B998 /* AppetizerApp.swift in Sources */,
 				7B8F005C2AFBB93E00496112 /* Alert.swift in Sources */,

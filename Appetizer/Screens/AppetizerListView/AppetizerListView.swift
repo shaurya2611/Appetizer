@@ -10,8 +10,11 @@ import SwiftUI
 struct AppetizerListView: View {
     
     @StateObject var viewModel = AppetizersListViewModel()
-    @State private var isShowingDetailView = false
-    @State private var selectedAppetizer : Appetizer?
+/*    @State private var isShowingDetailView = false
+      @State private var selectedAppetizer : Appetizer?
+     For code refactoring purpose moved above @State varibales in viewModel file and marked @Published
+      @Published var isShowingDetailView = false // published like whoever is listening to this varibale
+      @Published var selectedAppetizer : Appetizer?   */
 
     
     var body: some View {
@@ -20,28 +23,26 @@ struct AppetizerListView: View {
                 List(viewModel.appetizers){appetizer in
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
-                            selectedAppetizer = appetizer
-                            isShowingDetailView = true
+                            viewModel.selectedAppetizer = appetizer
+                            viewModel.isShowingDetailView = true
                         }
                     
                 }
                 // disable appied to view will make it unintractable
-                .disabled(isShowingDetailView)
+                .disabled(viewModel.isShowingDetailView)
                 .navigationTitle("Appetizers 🍝")
                 .navigationBarTitleDisplayMode(.large)
             }.onAppear(){
                 viewModel.getAppetizers()
             }
             // make appetizerListView blur when isShowingDetailView is TRUE
-            .blur(radius: isShowingDetailView ? 20 : 0)
+            .blur(radius: viewModel.isShowingDetailView ? 20 : 0)
             
             
-            
-            
-            // on tap resent detail view
-            if isShowingDetailView{
-                AppetizerDetails(isShowingDetailView: $isShowingDetailView,
-                                 appetizer: selectedAppetizer!)
+            // on tap show detail view
+            if viewModel.isShowingDetailView{
+                AppetizerDetails(isShowingDetailView: $viewModel.isShowingDetailView,
+                                 appetizer: viewModel.selectedAppetizer!)
             }
             
             // presenting loading view

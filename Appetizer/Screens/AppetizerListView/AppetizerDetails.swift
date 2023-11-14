@@ -66,14 +66,9 @@ struct AppetizerDetails: View {
             Spacer()
             
             Button{
-                
+                // button to order food
             }label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add To Order")
-                    .font(.system(.title3))
-                    .frame(width: 260, height: 40)
-                    .background(Color.brandPrimary)
-                    .foregroundColor(Color.white).bold()
-                    .cornerRadius(10)
+                APButton(buttonLabel: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
             }.padding(.bottom,18)
         }
         .frame(width:300, height:525)
@@ -85,10 +80,7 @@ struct AppetizerDetails: View {
             Button{
                 isShowingDetailView = false
             }label: {
-                ZStack{
-                    Circle().frame(width:30, height:30).foregroundColor(.white).opacity(0.6)
-                    Image(systemName: "xmark").frame(width:40, height:40).foregroundColor(.secondary)
-                }
+                XDismissButton()
             }.padding(3)
         }
         

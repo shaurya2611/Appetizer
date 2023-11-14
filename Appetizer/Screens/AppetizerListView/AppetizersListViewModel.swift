@@ -12,6 +12,8 @@ final class AppetizersListViewModel: ObservableObject{
     @Published var appetizers : [ Appetizer] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetailView = false
+    @Published var selectedAppetizer : Appetizer?
     
     func getAppetizers(){
         self.isLoading = true  // show laoding view as soon as network call is made

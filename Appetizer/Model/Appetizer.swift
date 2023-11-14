@@ -41,5 +41,34 @@ struct MockData{
                                         description: "This perfectly thin cut just melts in your mouth.",
                                         calories: 300)
     
-    static let sampleResponse = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    static var sampleResponse = [sampleAppetizer]
+    
+    static let order1 = Appetizer(protein: 14,
+                                        imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
+                                        carbs: 0,
+                                        id: 1,
+                                        name: "Asian Flank Steak",
+                                           price: 8.8989,
+                                        description: "This perfectly thin cut just melts in your mouth.",
+                                        calories: 300)
+    static let order2 = Appetizer(protein: 14,
+                                        imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
+                                        carbs: 0,
+                                        id: 2,
+                                        name: "Asian Flank Steak",
+                                           price: 8.8989,
+                                        description: "This perfectly thin cut just melts in your mouth.",
+                                        calories: 300)
+    static let order3 = Appetizer(protein: 14,
+                                        imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
+                                        carbs: 0,
+                                        id: 3,
+                                        name: "Asian Flank Steak",
+                                           price: 8.8989,
+                                        description: "This perfectly thin cut just melts in your mouth.",
+                                        calories: 300)
+    
+    static var orders : [Appetizer] = [order1, order2, order3]
+    
+    
 }
