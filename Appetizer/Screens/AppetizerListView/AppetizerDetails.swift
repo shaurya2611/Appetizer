@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AppetizerDetails: View {
     
+    @EnvironmentObject var orderEnvObject : Order
+    
     //Binding: to pass value to subviews, here below is passed form main list view to subview
     @Binding var isShowingDetailView: Bool
     
@@ -66,7 +68,8 @@ struct AppetizerDetails: View {
             Spacer()
             
             Button{
-                // button to order food
+                orderEnvObject.items.append(appetizer) // adding appetizer to env object order
+                isShowingDetailView = false
             }label: {
                 APButton(buttonLabel: "$\(appetizer.price, specifier: "%.2f") - Add To Order")
             }.padding(.bottom,18)
